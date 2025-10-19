@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Font Selector</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+<body>
+
+    <section class="main-text">
+        <h2 class="title">View your Font: </h2>
+        <form>
+            <div class="fontType">
+                <input type="reset" value="X" class="reset-button" />
+                <input type="text" name="mainText" onkeyup="updateFont()" id="specificFontTyper" />
+            </div>
+
+            <div class="options">
+                <div class="options-overhead">Options</div>
+
+                <div class="options-lowerhead">  
+                    <label for="fontSize">Font Size:</label>    
+                    <input type="number" id="fontSize" name="fontSize" min="16" max="32" value="32" oninput="updateFontSize()"/> 
+                    
+                    <br/>
+
+                    <label for="fontColor">Font Color:</label>
+                    <input type="color" id="fontColor" name="fontColor" value="#FFFFFF" oninput="updateFontColor()"/>
+
+                    <br/>
+                    
+                    <label for="uppercase">Auto Uppercase:</label>
+                    <input type="checkbox" name="autoUpperCase" id="uppercase" onchange="updateUpperCase()"/>
+                </div>
+            </div>
+
+            <div class="fontContainers">
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Coiny: </p>
+                    <input type="text" name="firstFont" class="font1" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Outfit:</p>
+                    <input type="text" name="secondFont" class="font2" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Oswald:</p>
+                    <input type="text" name="thirdFont" class="font3" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Montserrat:</p>
+                    <input type="text" name="fourthFont" class="font4" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Poppins:</p>
+                    <input type="text" name="fifthFont" class="font5" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">DM Serif Text:</p>
+                    <input type="text" name="sixthFont" class="font6" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Comic Relief:</p>
+                    <input type="text" name="seventhFont" class="font7" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Gabarito:</p>
+                    <input type="text" name="eighthFont" class="font8" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Lime Light:</p>
+                    <input type="text" name="ninthFont" class="font9" id="specificFontViewer" readonly/>
+                </article>
+
+                <article class="font-container">
+                    <p class="font-text" id="fontText">Permanent Market:</p>
+                    <input type="text" name="tenthFont" class="font10" id="specificFontViewer" readonly/>
+                </article>
+            </div>
+            
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
