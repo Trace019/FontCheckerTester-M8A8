@@ -175,9 +175,10 @@ input[type="checkbox"]:checked {
 }
 
 .font9 {
-    font-family: "Lime Light";
+  font-family: "Limelight", sans-serif;
 }
 
 .font10 {
-    font-family: "Permanent Market";
+  font-family: "Permanent Marker", cursive;
 }
+
